@@ -1,29 +1,29 @@
 let counter = 1;
-showSlides(counter);
+showTestimonials(counter);
 
 document.querySelector(".prev").addEventListener("click", () => {
-  plusSlides(-1);
+  plusTestimonials(-1);
 });
 
 document.querySelector(".next").addEventListener("click", () => {
-  plusSlides(1);
+  plusTestimonials(1);
 });
 
-function plusSlides(t) {
-  showSlides((counter += t));
+function plusTestimonials(t) {
+  showTestimonials((counter += t));
 }
 
-function showSlides(n) {
+function showTestimonials(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
+  let testimonials = document.getElementsByClassName("testimonial");
+  if (n > testimonials.length) {
     counter = 1;
   }
   if (n < 1) {
-    counter = slides.length;
+    counter = testimonials.length;
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  for (i = 0; i < testimonials.length; i++) {
+    testimonials[i].style.display = "none";
   }
-  slides[counter - 1].style.display = "block";
+  testimonials[counter - 1].style.display = "flex";
 }

@@ -22,17 +22,6 @@ h2{
   font-weight: 400;
 }
 
-.mySlides {
-  display: none;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .testimonial {
   border-top: 4px solid rgb(0, 184, 190);
   background-color: rgb(255, 255, 255);
@@ -46,6 +35,7 @@ h2{
   margin: 2rem;
   border-radius: 5px;
   padding: 45px 20px 20px;
+  animation: fade 2s
 }
 
 .testimonial img{
@@ -97,11 +87,6 @@ p span{
 .prev:hover,
 .next:hover {
   transform: translateY(-3px);
-}
-
-/* Fading animation */
-.fade {
-  animation: fade 2s;
 }
 
 @keyframes fade {
